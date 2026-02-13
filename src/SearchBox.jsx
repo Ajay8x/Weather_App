@@ -34,7 +34,12 @@ const API_KEY = import.meta.env.VITE_API_KEY;
                 country: jsonResponse.city.country,
                 windSpeed: jsonResponse.list[0].wind.speed,
                 pressure: jsonResponse.list[0].main.pressure
+
+         
             }
+        //  console.log(result);
+            // console.log(jsonResponse.list[0].main);
+      
             return result;
         } catch (err) {
             throw err;

@@ -43,7 +43,7 @@ export default function InfoBox(info) {
                         <Typography
                             variant="body2"
                             component="div"
-                            sx={{ color: 'text.secondary' }}
+                            sx={{ color: 'text.secondary',  backgroundColor: 'rgba(118, 16, 235, 0.11)', padding: '10px', borderRadius: '5px' }}
                         >
                             <div> City: {weatherInfo.city}, {weatherInfo.country}</div>
                             <div> Temperature: {weatherInfo.temperature} °C</div>
