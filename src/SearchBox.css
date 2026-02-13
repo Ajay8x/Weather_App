@@ -2,3 +2,65 @@
 .SearchBox {
   text-align: center;
 }
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* form container */
+.search-box form {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.search-box form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* TextField spacing */
+.search-box .MuiTextField-root {
+  width: 260px;
+}
+
+/* Button styling */
+.search-box button {
+  width: 200px;
+  height: 45px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 12px !important;
+  transition: 0.3s !important;
+}
+
+.search-box button:hover {
+  transform: scale(1.05);
+}
+
+/* Snackbar alert center spacing */
+.MuiSnackbar-root {
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .search-box form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .search-box .MuiTextField-root {
+    width: 100%;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+}

@@ -1,14 +1,48 @@
-.InfoBox{
-    text-align: center;
+.InfoBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
-.cardContainer{
-
-    justify-content: center;
-    display: flex;
-    height: auto;
-    gap: 20px;
-    width: auto ;
- 
-
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.weatherCard {
+  width: 340px;
+  border-radius: 18px !important;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+  transition: 0.3s;
+}
+
+.weatherCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25) !important;
+}
+
+.cardImage {
+  height: 180px !important;
+  background-size: cover;
+}
+
+.cityTitle {
+  text-align: center;
+  font-weight: bold !important;
+  color: #673ab7 !important;
+  margin-bottom: 10px !important;
+}
+
+.weatherDetails {
+  background: rgba(118, 16, 235, 0.08);
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.weatherDetails p {
+  margin: 6px 0;
+}
+

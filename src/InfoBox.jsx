@@ -23,39 +23,40 @@ export default function InfoBox(info) {
 
     return (
         <div className="InfoBox">
-            <br />
             <div className="cardContainer">
 
-
-                <Card sx={{ maxWidth: 345 }}>
+                <Card className="weatherCard">
                     <CardMedia
-                        sx={{ height: 140 }}
-
-
-                        image={weatherInfo.temperature > 25 ? HOT_URL : weatherInfo.temperature < 15 ? COLD_URL : weatherInfo.weatherType === "Rain" ? RAIN_URL : INIT_URL}
-
-
+                        className="cardImage"
+                        image={
+                            weatherInfo.temperature > 25
+                                ? HOT_URL
+                                : weatherInfo.temperature < 15
+                                    ? COLD_URL
+                                    : weatherInfo.weatherType === "Rain"
+                                        ? RAIN_URL
+                                        : INIT_URL
+                        }
                     />
+
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
+                        <Typography variant="h5" className="cityTitle">
                             {weatherInfo.city}
                         </Typography>
-                        <Typography
-                            variant="body2"
-                            component="div"
-                            sx={{ color: 'text.secondary',  backgroundColor: 'rgba(118, 16, 235, 0.11)', padding: '10px', borderRadius: '5px' }}
-                        >
-                            <div> City: {weatherInfo.city}, {weatherInfo.country}</div>
-                            <div> Temperature: {weatherInfo.temperature} °C</div>
-                            <div> Humidity: {weatherInfo.humidity}%</div>
-                            <div> Wind Speed: {weatherInfo.windSpeed} m/s</div>
-                            <div> Pressure: {weatherInfo.pressure} hPa</div>
-                            <div> Weather: {weatherInfo.weatherType}</div>
-                        </Typography>
+
+                        <div className="weatherDetails">
+                            <p>City: {weatherInfo.city}, {weatherInfo.country}</p>
+                            <p>Temperature: {weatherInfo.temperature} °C</p>
+                            <p>Humidity: {weatherInfo.humidity}%</p>
+                            <p>Wind Speed: {weatherInfo.windSpeed} m/s</p>
+                            <p>Pressure: {weatherInfo.pressure} hPa</p>
+                            <p>Weather: {weatherInfo.weatherType}</p>
+                        </div>
+
                     </CardContent>
                 </Card>
-            </div>
 
+            </div>
         </div>
     )
 }
