@@ -113,7 +113,7 @@ useEffect(() => {
   anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
 >
   <Alert severity="error">
- <center>  <p>    City not found! Please enter a valid city name.</p>
+ <center>  <p>    City not found! enter a valid city name.</p>
 <p>   शहर नहीं मिला! कृपया एक वैध शहर का नाम दर्ज करें</p>
    
  </center>
