@@ -31,8 +31,15 @@
 .cityTitle {
   text-align: center;
   font-weight: bold !important;
-  color: #673ab7 !important;
+  color: #2d98a8 !important;
   margin-bottom: 10px !important;
+}
+
+
+
+.cityTitle:hover {
+  color: #08dcfd !important;
+  font-size: 30px !important;
 }
 
 .weatherDetails {
@@ -44,5 +51,16 @@
 
 .weatherDetails p {
   margin: 6px 0;
+}
+
+.info {
+  font-weight: bold;
+  font-size: 15px;
+ 
+}
+
+.info:hover {
+  background: rgba(160, 119, 207, 0.757);
+  font-size: large;
 }
 
