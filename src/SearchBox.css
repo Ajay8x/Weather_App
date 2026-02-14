@@ -46,14 +46,15 @@
 
 /* Snackbar alert center spacing */
 .MuiSnackbar-root {
-  margin-top: 20px;
+ align-items: center;
+ margin-top: 200px;
 }
 
 /* Responsive */
 @media (max-width: 500px) {
   .search-box form {
     width: 90%;
-    padding: 20px;
+    padding: 15px;
   }
 
   .search-box .MuiTextField-root {

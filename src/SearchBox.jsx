@@ -96,7 +96,7 @@ useEffect(() => {
             <form onSubmit={handleSubmit}>
                 <TextField
                     id="city"
-                    label="City Name"
+                    label=" City,country Name"
                     variant="outlined"
                     required
                     value={city}
@@ -108,12 +108,15 @@ useEffect(() => {
  
 <Snackbar
   open={error}
-  autoHideDuration={3000}
+  autoHideDuration={2000}
   onClose={() => setError(false)}
   anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
 >
   <Alert severity="error">
-    Could not fetch weather data.
+ <center>  <p>    City not found! Please enter a valid city name.</p>
+<p>   शहर नहीं मिला! कृपया एक वैध शहर का नाम दर्ज करें</p>
+   
+ </center>
   </Alert>
 </Snackbar>
 
