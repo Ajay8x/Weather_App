@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  min-height: 100vh;
+}
+
+.app-container{
+  background-image: url("https://images.unsplash.com/photo-1501630834273-4b5604d2ee31");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+

@@ -6,7 +6,7 @@ function App() {
     <>
 
 <WeatherApp/>
-<p style={{textAlign:"center", marginTop:"20px", fontSize:"12px", color:"gray"}}>
+<p style={{textAlign:"center", marginTop:"20px", fontSize:"12px", color:" 5px solodblack"}}>
   Created by Ajay8x
 </p>
 
