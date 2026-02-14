@@ -108,7 +108,7 @@ useEffect(() => {
  
 <Snackbar
   open={error}
-  autoHideDuration={5000}
+  autoHideDuration={3000}
   onClose={() => setError(false)}
   anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
 >
