@@ -16,6 +16,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   // Menu items with links
+  //
   const menuItems = [
     { name: "Home", link: "#" },
     { name: "Weather", link: "#" },
