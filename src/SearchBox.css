@@ -65,3 +65,23 @@
     width: 100%;
   }
 }
+
+
+
+.suggestions{
+    border:1px solid #ccc;
+    border-radius:8px;
+    max-height:200px;
+    overflow-y:auto;
+    background:white;
+    margin-top:5px;
+}
+
+.suggestionItem{
+    padding:10px;
+    cursor:pointer;
+}
+
+.suggestionItem:hover{
+    background:#f0f0f0;
+}
