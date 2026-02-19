@@ -44,21 +44,23 @@ export default function InfoBox(info) {
                             {weatherInfo.city}
                         </Typography>
 
-                      <div
-  className="weatherDetails"
-  style={{
+                        <div
+                            className="weatherDetails"
+                            style={{
 
-    boxShadow: "1 8px 32px rgba(0, 0, 0, 0.3)",
+                                boxShadow: "1 8px 32px rgba(0, 0, 0, 0.3)",
 
-  }}
->
-  <p className="info"><b>📍 City:</b> {weatherInfo.city}, {weatherInfo.country}</p>
-  <p className="info"><b>🌡 Temperature:</b> {weatherInfo.temperature} °C</p>
-  <p className="info"><b>💧 Humidity:</b> {weatherInfo.humidity}%</p>
-  <p className="info"><b>🌬 Wind:</b> {weatherInfo.windSpeed} m/s</p>
-  <p className="info"><b>🔽 Pressure:</b> {weatherInfo.pressure} hPa</p>
-  <p className="info"><b>☁ Weather:</b> {weatherInfo.weatherType}</p>
-</div>
+                            }}
+                        >
+                            <p className="info"><b>📍 City:</b> {weatherInfo.city}, {weatherInfo.country}</p>
+                            <p className="info"><b>🌡 Temperature:</b> {weatherInfo.temperature} °C</p>
+                            <p className="info"><b>💧 Humidity:</b> {weatherInfo.humidity}%</p>
+                            <p className="info">
+                                <b>🌬 Wind:</b> {(weatherInfo.windSpeed * 3.6).toFixed(2)} km/h
+                            </p>
+                            <p className="info"><b>🔽 Pressure:</b> {weatherInfo.pressure} hPa</p>
+                            <p className="info"><b>☁ Weather:</b> {weatherInfo.weatherType}</p>
+                        </div>
 
                     </CardContent>
                 </Card>
