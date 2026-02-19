@@ -1,6 +1,7 @@
 // import './App.css';
 import WeatherApp from "./WeatherApp";
-import Navbar from "./navbar";
+import Navbar from "./navbar.jsx";
+
 
 function App() {
   return (
